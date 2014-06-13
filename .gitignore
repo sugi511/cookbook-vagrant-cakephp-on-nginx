@@ -1,0 +1,4 @@
+data
+cookbooks
+Berksfile.lock
+Gemfile.lock
