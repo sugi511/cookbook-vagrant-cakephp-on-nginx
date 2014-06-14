@@ -12,10 +12,10 @@ execute "chmod app_dir" do
   action :run
 end
 
-execute "bake cake project" do
-  command "su vagrant -l -c 'yes | #{cakephp_dir}/Vendor/bin/cake bake project #{cakephp_dir}'" 
-  action :run
-end
+# execute "bake cake project" do
+#   command "su vagrant -l -c 'yes | #{cakephp_dir}/Vendor/bin/cake bake project #{cakephp_dir}'" 
+#   action :run
+# end
 
 template 'php.ini' do
   path '/etc/php.ini'
